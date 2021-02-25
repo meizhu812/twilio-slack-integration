@@ -1,0 +1,4 @@
+twilio==6.51.1
+slack_sdk==3.2.1
+ntplib==0.3.4
+PyYAML~=5.4.1

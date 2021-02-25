@@ -1,0 +1,25 @@
+Network:
+  Max Retries: 5
+  Resting Report Interval: 3600
+  NTP Root Domain: ".cn.pool.ntp.org"
+
+Log:
+  Log Format: "%(asctime)s %(name)-15s %(levelname)-8s %(message)s"
+  Timestamp Format: "%Y-%m-%d %H:%M:%S"
+
+SMS:
+  Region Number: "+65"
+  Message Pattern: "Your verification code is: (?P<code>\\d+)"
+  Timestamp Format: "%H:%M:%S"
+  Allow List:
+    - "87409085"
+    - "84230483"
+    - "98142083"
+    - "87418427"
+
+Slack:
+  Admin Id: "U01FM8Q9A05"
+  Channel Id: "#otp_publish"
+  Work Time:
+    Start: "0900"
+    End: "1830"

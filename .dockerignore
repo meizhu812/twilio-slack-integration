@@ -1,0 +1,5 @@
+venv
+credentials.example.py
+requirements-dev.txt
+pyproject.toml
+setup.cfg
