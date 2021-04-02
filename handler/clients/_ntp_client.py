@@ -13,7 +13,7 @@ logger.setLevel(INFO)
 
 
 def get_local_dt() -> datetime:
-    if os.getenv('SLACK_ENV') != "prod":
+    if os.getenv("SLACK_ENV") != "prod":
         return _get_system_local_dt()
     try:
         return _get_ntp_local_dt()

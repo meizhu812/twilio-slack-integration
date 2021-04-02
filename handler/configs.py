@@ -32,11 +32,9 @@ sms_ = config["SMS"]
 PHONE_NO_PREFIX = sms_["Region Number"]
 PATTERN = re.compile(sms_["Message Pattern"])
 TIMESTAMP_FORMAT = sms_["Timestamp Format"]
-ALLOW_LIST = sms_["Allow List"]
 
 # Slack
 slack_ = config["Slack"]
-ADMIN_ID = slack_["Admin Id"]
 CHANNEL_ID = slack_["Channel Id"]
 WORK_TIME_START = convert_to_time(slack_["Work Time"]["Start"])
 WORK_TIME_END = convert_to_time(slack_["Work Time"]["End"])

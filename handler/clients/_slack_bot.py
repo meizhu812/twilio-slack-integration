@@ -6,8 +6,6 @@ from slack_sdk import WebClient
 from twilio.rest.api.v2010.account.message import MessageInstance
 
 from handler.configs import (
-    ADMIN_ID,
-    ALLOW_LIST,
     CHANNEL_ID,
     PATTERN,
     PHONE_NO_PREFIX,
@@ -15,7 +13,7 @@ from handler.configs import (
     WORK_TIME_END,
     WORK_TIME_START,
 )
-from credentials import BOT_TOKEN
+from credentials import ADMIN_ID, ALLOW_LIST, BOT_TOKEN
 from handler.clients._ntp_client import get_local_dt
 
 slack_bot = WebClient(token=BOT_TOKEN, ssl=SSLContext())
